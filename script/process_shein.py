@@ -24,4 +24,5 @@ response = requests.post(
 if response.status_code == 200:
     with open('cleaned_products.json', 'w') as f:
         f.write(response.text)
+
     print("Done! Check cleaned_products.json")
